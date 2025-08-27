@@ -1,8 +1,3 @@
-Use this repository to start class for the lesson 6.1
+# July 2025 Practice SPA
 
-
-The following packages will need to be installed to support the State-driven SPA using `npm install {package-name}`:
-html-literal
-parcel
-navigo (version 8)
-lodash
+This is the instructor driven class SPA for the July 2025 Savvy Coders Full Stack Development cohort.
