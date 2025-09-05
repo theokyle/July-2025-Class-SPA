@@ -1,5 +1,5 @@
 import html from 'html-literal';
-import navItem from "./navItem.js";
+import navItem from "./navItem";
 
 export default navItems => html `<nav>
     <i class="fas fa-bars"></i>
