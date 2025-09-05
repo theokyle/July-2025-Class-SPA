@@ -1,11 +1,9 @@
 import html from 'html-literal';
+import navItem from "./navItem";
 
-export default () => html `<nav>
+export default navItems => html `<nav>
     <i class="fas fa-bars"></i>
-    <ul class="hidden--mobile nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="aboutMe.html">Bio</a></li>
-      <li><a href="pizza.html">Pizza</a></li>
-      <li><a href="order.html">Order</a></li>
+    <ul class="">
+      ${navItems.map(item => navItem(item)).join("")}
     </ul>
   </nav>`
