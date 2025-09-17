@@ -2,11 +2,12 @@ import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
 import mongoose from "mongoose";
+import pizzas from "./controllers/pizzas.js";
 
 const app = express();
 dotenv.config();
 
-const PORT = process.env.PORT || 3000;
+const PORT = 3000;
 
 mongoose.connect(process.env.MONGODB);
 const db = mongoose.connection;
@@ -61,5 +62,7 @@ app.get("/weather/:city", (request, response) => {
     city
   });
 });
+
+app.use("/pizzas", pizzas);
 
 const server = app.listen(PORT, () => console.log(`Listening on port ${server.address().port}`));
