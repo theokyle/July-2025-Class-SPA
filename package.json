@@ -6,7 +6,8 @@
   "scripts": {
     "build": "parcel build index.html && cp _redirects ./dist/",
     "start": "parcel index.html",
-    "app:watch": "nodemon --watch ./server -e js ./server/app.js"
+    "app:watch": "nodemon --watch ./server -e js ./server/app.js",
+    "test": "jasmine"
   },
   "keywords": [],
   "author": "",
@@ -14,10 +15,12 @@
   "devDependencies": {
     "buffer": "^6.0.3",
     "crypto-browserify": "^3.12.1",
+    "cypress": "^14.5.4",
     "eslint": "^9.28.0",
     "eslint-config-prettier": "^6.15.0",
     "eslint-plugin-prettier": "^3.3.1",
     "events": "^3.3.0",
+    "jasmine": "^5.10.0",
     "nodemon": "^3.1.10",
     "os-browserify": "^0.3.0",
     "path-browserify": "^1.0.1",
